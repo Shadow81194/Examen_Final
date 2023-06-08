@@ -1,0 +1,668 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*font-family: 'Bebas Neue', cursive;*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: nome;
+	list-style: nome;
+}
+
+body {
+	font-family: Ariel, Helvetica, sans-serif;
+	background-color:  #161815;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header {
+	background: linear-gradient(
+	rgba(0, 0, 0, 0.4),
+	rgba(0, 0, 0, 0.4)),
+	url(imagen/fondo.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 70vh;
+	display: flex;
+	align-items: center;
+}
+
+.menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+}
+
+.logo{
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.menu .navdar ul li{
+	position: relative;
+	float: left;
+}
+
+.menu .navdar ul li a{
+	font-size: 18px;
+	padding: 20px;
+	color: #FFFFFF;
+	display: block;
+}
+
+.menu .navdar ul li a:hover {
+	color: #13975E;
+}
+
+#menu{
+	display: none;
+}
+
+.menu-icono{
+	width: 25px;
+}
+
+.menu label{
+	cursor: pointer;
+	display: none;
+}
+
+.header-content{
+	display: flex;
+	align-items: center;
+}
+
+.header-txt{
+	width: 80%;
+}
+
+.header-txt h1{
+	font-size: 120px;
+	line-height: 150px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-family: 'Bebas Neue', cursive;
+	margin-bottom: 25px;
+}
+
+.header-txt p{
+	font-size: 18px;
+	color: #C4C4C4;
+	margin-bottom: 35px;
+	border-left: 1px solid #FFFFFF;
+	padding-left: 15px;
+}
+
+.btn-1{
+	display: inline-block;
+	padding: 12px 35px;
+	background-color: #13975E;
+	border-radius: 10px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: 'Bebas Neue', cursive;
+	margin-top: 25px;
+}
+
+.btn-1:hover {
+	background-color: #19C67B;
+	
+}
+
+.header-img {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+
+.header-img a{
+	margin-bottom: 40px;
+}
+
+.tours{
+	padding: 10px 0;
+	text-align: center;
+}
+
+h2{
+	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 1px;
+	font-size: 85px;
+	line-height: 95px;
+	color: #FFFFFF;
+	text-transform: capitalize;
+	margin-bottom: 15px;
+}
+
+p{
+	font-size: 18px;
+	color: #C4C4C4;
+}
+
+.tour-content{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+
+.tour-1{
+	background: linear-gradient(
+	rgba(0, 0, 0, 0.8),
+	rgba(0, 0, 0, 0.8)),
+	url(imagen/tour1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 350px;
+	width: 250px;
+	border-radius: 10px;
+	padding: 25px;
+	margin-bottom: 20px;
+}
+.tour-2{
+	background: linear-gradient(
+	rgba(0, 0, 0, 0.8),
+	rgba(0, 0, 0, 0.8)),
+	url(imagen/tour2.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 350px;
+	width: 250px;
+	border-radius: 10px;
+	padding: 25px;
+	margin-bottom: 20px;
+}
+.tour-3{
+	background: linear-gradient(
+	rgba(0, 0, 0, 0.8),
+	rgba(0, 0, 0, 0.8)),
+	url(imagen/tour3.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 350px;
+	width: 250px;
+	border-radius: 10px;
+	padding: 25px;
+	margin-bottom: 20px;
+}
+.tour-4{
+	background: linear-gradient(
+	rgba(0, 0, 0, 0.8),
+	rgba(0, 0, 0, 0.8)),
+	url(imagen/tour4.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 350px;
+	width: 250px;
+	border-radius: 10px;
+	padding: 25px;
+	margin-bottom: 20px;
+}
+
+
+.tour-txt h3{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 40px;
+	color: #FFFFFF; 
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.tour-txt h3{
+	color: #E1E1E1; 
+}
+
+.video{
+	padding: 150px 0;
+	background: linear-gradient(
+	rgba(0, 0, 0, 0.5),
+	rgba(0, 0, 0, 0.5)),
+	url(imagen/fondo2.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.video-content{
+	display: flex;
+	align-items: center;
+}
+
+.video-1{
+	width: 50%;
+	padding-right: 70px;
+}
+
+.video-2{
+	width: 50%;
+	display: flex;
+}
+
+.v1{
+	width: 300px;
+	margin-right: 25px;
+	border-radius: 10px;
+}
+.v2{
+	width: 300px;
+	border-radius: 10px;
+}
+
+.footer-bg{
+	text-align: center;
+	padding: 100px 0;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.campo-1{
+	margin-bottom: 15px;
+}
+
+.campo{
+	margin: 5px;
+	padding: 20px 15px;
+	width: 250px;
+	background-color: #0E0E0E;
+	border: 1px solid #13975E;
+	outline: none;
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+textarea{
+	width: 520px !important;
+}
+
+.footer-txt{
+	text-align: center;
+	padding: 20px;
+	background-color: #070707;
+}
+
+@media(max-width:991px){
+
+	.menu{
+		padding: 20px;
+	}
+	
+	.menu label{
+		display: initial;
+	}
+	
+	.menu .navdar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: #161815;
+		display: none;
+		
+	}
+	
+	.menu .navdar{
+		width: 100%;
+	}
+	
+	.menu .navdar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: #161815;
+		display: none;
+		
+	}
+	
+	.menu .navdar ul li{
+		width: 100%
+	}
+	
+	#menu:checked ~ .navdar{
+		display: initial;
+	}
+	
+	.header{
+		min-height: 0vh;
+	}
+	
+	.header-content{
+		flex-direction: column;
+		padding: 100px 30px 30px 30px;
+	}
+	
+	.header-txt{
+		width: 100%;
+		text-align: center;
+	}
+	
+	header-txt h1{
+		font-size: 80px;
+		line-height: 90px;
+		margin-bottom: 15px;
+	}
+	
+	header-txt p{
+		border: 0;
+		padding: 0;
+		margin-bottom: 15px;
+	}
+	
+	.btn-1{
+		margin: 20px 0;
+	}
+	
+	.header-img {
+		width: 100%;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 25px;
+	}
+	
+	.header-img a{
+		margin: 0 10px;
+	}
+	
+	.tours{
+		padding: 30px;
+	}
+	
+	h2{
+		font-size: 60px;
+		line-height: 70px;
+	}
+	
+	.tour-content{
+		flex-direction: column;
+		align-items: center;
+		margin-top: 30px;
+	}
+
+.video{
+	padding: 30px;
+}
+
+.video-content{
+	flex-direction: column;
+}
+
+.video-1{
+	width: 100%;
+	padding-right: 0;
+	text-align: center;
+}
+
+.video-2{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.v1, .v2{
+	width: 250px;
+	margin: 0 0 20px 0;
+}
+
+.footer-bg{
+	padding: 30px;
+}
+
+textarea{
+	width: 250px !important;
+}
+.footer-txt{
+	padding: 30px;
+	
+}
+
+}
+
+.footer-tabla{
+text-align: center;
+	padding: 20px;
+	background-color: #FFFFFF;
+	
+
+}
+
+footer-tabla hh{
+color: #070707;
+}
+</style>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 🤪 MALECON 2000 🤪</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<header class="header" >
+ 	<div class="menu container">
+ 		<a href="" class="logo">logo</a>
+ 			<input type="checkbox" id="menu" />
+ <label for="menu">
+ 	<img src="imagen/" class="menu-icono" alt=""></img>
+ </label>
+ <nav class="navdar">
+ <ul>
+ 		<li><a href="http://malecon.org.ec/">Inicio 🧳</a></li>
+  		<li><a href="http://malecon2000.com/servicios">Servicios 🕹️</a></li>
+   		<li><a href="http://malecondelsalado.com/">Ver los Productos ♞</a></li>
+    	<li><a href="http://malecon.org.ec/contactos">Contacto 🕾</a></li>
+    	<li><a href="http://malecondelsalado.com/como-llegar">Como Llegar 🗺️</a></li>
+ </ul>
+ </nav>
+ </div>
+ 
+ <div class="header-content container">
+ 	<div class="header-txt"> 
+ 	<h1>Visita el <br> Malecon 2000</h1>
+ <p>
+		Le decimos Miami chiquito al malecón 2000 porque tiene de todo un poco como: parques acuáticos,
+		escalinatas numeradas con más de 600 escalones también conocido como las peñas es un cerro. 
+		Lleno de lujo en cada esquina hay discotecas bares gastronomías toda una belleza con una buena atención
+		al cliente disfrutaras del río malecón paseando en yates y cruceros con un vistazo espectacular inolvidable 
+		el malecón tiene forma de un barco de crucero con una longitud de largo de 3 kilómetros y 600 metros de ancho 
+		adentro hay shopping cajeros parque de diversiones para niños cines de terror para adultos es magnífico el que 
+		no conoce el malecón 2000 no conoce bien América del sur. ...se los recomiendo. me contarán lo divertido e inolvidable que lo van a pasar.
+
+ </p>
+ <a href="https://www.tripadvisor.es/Attraction_Review-g303845-d317919-Reviews-Malecon_2000-Guayaquil_Guayas_Province.html" class="btn-1">Información</a>
+ </div>
+ <div class="header-img">
+ 		<a href="https://www.facebook.com/">
+ 		<img src="imagen/face.gif"  width="20" alt="10">
+ </a>
+ 		<a href="https://www.google.com/?hl=es">
+ 		<img src="imagen/goo.gif" width="20" alt="10">
+ </a>
+ 		<a href="https://www.instagram.com/">
+ 		<img src="imagen/intg.gif" width="20" alt="10">
+ </a>
+ 		<a href="https://twitter.com/">
+ 		<img src="imagen/twi.gif" width="20" alt="10">
+ </a>
+ 		</div>
+ 	</div>
+</header>
+
+<main class="tours container">
+	<h2>Las mejores formas de vivir es Malecón 2000</h2>
+<p>
+	Le mostramos unas de los mejores lugar del Malecon 2000 <br> 
+	para que disfrute de este lindo lugar.
+</p>
+
+<div class="tour-content">
+	<div class="tour-1 ">
+		<div class="tour-txt">
+			<h3>Tour 1 😏</h3>
+	<p>Tour Premium de medio dia en Guayaquil.<br> 
+			<br> 
+			Privados o de lujo<br> 
+			De 3 a 4 horas.<br> 
+			Pasamos por ti donde sea que estés, hotel, Airbnb o incluso en el <br> 
+			Aeropuerto de Guayaquil. y te llevamos a conocer lo mejor…<br> 
+	</p>
+</div>
+</div>
+
+<div class="tour-2 ">
+	<div class="tour-txt">
+		<h3>Tour 2 🥰</h3>
+		<p>City tour Guayaquil De Mis Amores/bus de Dos Pisos.<br> 
+		<br> 
+		Recorridos en autobús.<br> 
+		De 1 a 2 horas.<br> 
+		Disfruta de Guayaquil de una manera diferente, el tour te <br> 
+		permite ver los puntos mas importante de esta hermosa ciudad. …
+		</p>
+	</div>
+</div>
+
+<div class="tour-3 ">
+	<div class="tour-txt">
+		<h3>Tour 3 🤫</h3>
+		<p>Visita turística de Guayaquil con transporte aéreo de ida y vuelta.<br> 
+		<br> 
+		Recorridos en autobús.<br> 
+		De 3 a 4 horas. <br> 
+		Saque el máximo provecho de su escala en el aeropuerto de Guayaquil <br> 
+		con un recorrido turístico que incluye el traslado de…
+		</p>
+	</div>
+</div>
+
+<div class="tour-4 ">
+	<div class="tour-txt">
+		<h3>Tour 4 🤭</h3>
+		<p>Paseo por la Ciudad de Guayaquil.<br> 
+		<br> 
+		Recorridos en autobús. <br> 
+		3 horas.<br> 
+        En este maravilloso recorrido visitaremos el encantador parque Simón Bolívar, <br> 
+        El moderno Malecón 2000, sus fascinantes muelles…
+		</p>
+	</div>
+</div>
+</div>
+</main> 
+
+<section class="video">
+
+<div class="video-content container">
+
+<div class="video-1">
+ 		<h2>Descubre el mundo a través del Malecón 2000</h2>
+			 <p>
+			 El Malecón 2000, está a pocos minutos caminando del centro de Guayaquil en este lugar podrás 
+			 visitar locales de comida, locales comerciales, parque de diversiones para niños y sobre todo 
+			 una serie de monumentos en honor a la ciudad de Guayaquil, además también podrás visualizar el gran río Guayas.
+			 </p>
+ <a href="https://www.tripadvisor.es/Attractions-g303845-Activities-Guayaquil_Guayas_Province.html" class="btn-1">Información</a> 
+</div>
+
+<div class="video-2">
+
+	<video class="v1" controls> 
+ 
+		<source src="video/" type="video/mp4">
+	</video>
+
+	<video class="v2" controls> 
+		<source src="video/" type="video/mp4">
+	</video>
+
+</div>
+</div>	
+</section>
+
+<footer>
+<div class="footer-bg">
+		<h2>Reserve su Cita en el Malecón</h2>
+	<form action="datos.jsp" method="post">
+<div class="campo-1">
+		<input class="campo" type="text" placeholder="Nombre: " name="Nombre: ">
+		<input class="campo" type="number" placeholder="Telefono: ">
+</div>
+
+<div class="campo-1">
+		<input class="campo" type="text" placeholder="Direccion: ">
+		<input class="campo" type="email" placeholder="Correo: ">
+</div>
+
+	<textarea class="campo" cols="30" rows="10" placeholder="Texto"> </textarea>
+		<input type="submit" class="btn-1" value="Enviar"></input>
+	</form>
+</div>
+<div class="footer-tabla">
+<center>
+	<hh>
+	Maneras de Recorrer Guayaquil
+	</hh>
+	<p>
+		<table border="1">
+		
+        <tr><td>Guayaquil: Tour Premium de medio día en Guayaquil</td><td>Privados o de lujo
+a partir de 134,46 € por adulto (el precio varía en función del número de personas por grupo)</td></tr>
+
+        <tr><td>Excursión privada de naturaleza y aventura de día completo desde Guayaquil</td><td>Tours de aventura
+a partir de 147,44 € por adulto (el precio varía en función del número de personas por grupo)</td></tr>
+
+        <tr><td>La Reserva Ecológica Manglares Churute y granja de cacao</td><td> Tours de aventura a partir de 157,64 € por adulto 
+        (el precio varía en función del número de personas por grupo)</td></tr>
+        
+        <tr><td>Tour privado de cacao y chocolate</td><td>Recorridos en autobús a partir de 143,73 € por adulto</td></tr>
+        
+        <tr><td>Recorrido por la ciudad de Guayaquil</td><td>Recorridos en autobúsa partir de 16,69 € por adulto 
+        (el precio varía en función del número de personas por grupo)</td></tr>
+        
+        <tr><td>La Reserva Ecológica Manglares Churute y granja de cacao</td><td>Tours de aventuraa partir de 157,64 € por adulto (el precio varía en función del número de personas por grupo)</td></tr>
+        <tr><td>Excursión privada de día completo por Guayaquil y una plantación de cacao</td><td>Tours de un día completo a partir de 142,66 € por adulto</td></tr>
+        <tr><td>Visita turística de Guayaquil con transporte aéreo de ida y vuelta</td><td>Recorridos en autobús a partir de 76,09 € por adulto</td></tr>
+ 
+        </table>
+	</p>
+	 </center>
+</div>
+<div class="footer-txt">
+	<p>
+		Bonito lugar para compartir en familia, juegos para niños, un lugar limpio y acogedor, una pequeña caminata para salir de la rutina
+	</p>
+</div>
+</footer>
+
+</body>
+</html>
